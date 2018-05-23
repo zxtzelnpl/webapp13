@@ -67,6 +67,14 @@ public class UserModel {
     }
 
 
+    public void init(){
+        System.out.println("init");
+    }
+
+    public void destroy(){
+        System.out.println("destory");
+    }
+
     @Override
     public String toString() {
         return "User [userId=" + userId + ", UserName=" + UserName
