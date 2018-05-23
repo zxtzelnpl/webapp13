@@ -20,6 +20,7 @@
     </environments>
     <mappers>
         <!--<mapper resource="mappers/UserMapper.xml" />-->
-        <mapper class="com.zxt.user.mapper" />
+        <mapper resource="com.zxt.user/UserMapper.xml" />
+        <!--<mapper class="com.zxt.user.mapper" />-->
     </mappers>
 </configuration>
