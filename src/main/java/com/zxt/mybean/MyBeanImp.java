@@ -15,6 +15,10 @@ public class MyBeanImp implements MyBean {
         this.list = list;
     }
 
+    public List<UserModel> getList(){
+        return this.list;
+    }
+
     public void sayName(){
         System.out.println("MyBeanImp say:"+name);
     }

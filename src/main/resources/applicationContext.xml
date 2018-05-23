@@ -11,11 +11,11 @@
         </property>
     </bean>
     <bean id="userModel1" class="com.zxt.user.UserModel" init-method="init" destroy-method="destroy">
-        <property name="UserName" value="HanMeimei" />
-        <property name="UserPassword" value="thisispwd" />
+        <property name="userName" value="HanMeimei" />
+        <property name="userPassword" value="thisispwd" />
         <property name="userSex" value="男" />
         <property name="userHome" value="BeiJin" />
         <property name="userInfo" value="HanMeimei" />
-        <property name="UserEmail" value="zxt_zel_npl@163.com" />
+        <property name="userEmail" value="zxt_zel_npl@163.com" />
     </bean>
 </beans>

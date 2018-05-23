@@ -3,23 +3,23 @@ package com.zxt.user;
 public class UserModel {
 
     private int userId;
-    private String UserName;
-    private String UserPassword;
+    private String userName;
+    private String userPassword;
     private String userSex;
     private String userHome;
     private String userInfo;
-    private String UserEmail;
+    private String userEmail;
 
     public int getUserId() {
         return userId;
     }
 
     public String getUserName() {
-        return UserName;
+        return userName;
     }
 
     public String getUserPassword() {
-        return UserPassword;
+        return userPassword;
     }
 
     public String getUserSex() {
@@ -35,7 +35,7 @@ public class UserModel {
     }
 
     public String getUserEmail() {
-        return UserEmail;
+        return userEmail;
     }
 
     public void setUserId(int userId) {
@@ -43,11 +43,11 @@ public class UserModel {
     }
 
     public void setUserName(String userName) {
-        UserName = userName;
+        this.userName = userName;
     }
 
     public void setUserPassword(String userPassword) {
-        UserPassword = userPassword;
+        this.userPassword = userPassword;
     }
 
     public void setUserSex(String userSex) {
@@ -63,7 +63,7 @@ public class UserModel {
     }
 
     public void setUserEmail(String userEmail) {
-        UserEmail = userEmail;
+        this.userEmail = userEmail;
     }
 
 
@@ -77,8 +77,8 @@ public class UserModel {
 
     @Override
     public String toString() {
-        return "User [userId=" + userId + ", UserName=" + UserName
-                + ", UserEmail=" + UserEmail + "]";
+        return "User [userId=" + userId + ", UserName=" + userName
+                + ", UserEmail=" + userEmail + "]";
     }
 
 

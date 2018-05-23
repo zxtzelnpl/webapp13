@@ -11,6 +11,11 @@
     <title>UserOne</title>
   </head>
   <body>
-  $END$
+  <p>${user.userName}</p>
+  <p>${user.userPassword}</p>
+  <p>${user.userSex}</p>
+  <p>${user.userHome}</p>
+  <p>${user.userInfo}</p>
+  <p>${user.userEmail}</p>
   </body>
 </html>
