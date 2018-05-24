@@ -2,6 +2,10 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <bean id="userController" class="com.zxt.user.UserController" />
+
     <bean id="myBeanImp" class="com.zxt.mybean.MyBeanImp">
         <property name="name" value="HanMeimei" />
         <property name="list">
@@ -10,6 +14,7 @@
             </list>
         </property>
     </bean>
+
     <bean id="userModel1" class="com.zxt.user.UserModel" init-method="init" destroy-method="destroy">
         <property name="userName" value="HanMeimei" />
         <property name="userPassword" value="thisispwd" />

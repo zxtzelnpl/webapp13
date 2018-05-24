@@ -20,10 +20,10 @@ public class MyBeanImp implements MyBean {
     }
 
     public void sayName(){
-        System.out.println("MyBeanImp say:"+name);
+        System.out.println("MyBeanImp say:"+name +" at line 23 of MyBeanImp.java");
     }
 
     public void showList(){
-        System.out.println("MyBeanImp has user:"+list.size());
+        System.out.println("MyBeanImp has user:"+list.size() +" at line 27 of MyBeanImp.java");
     }
 }

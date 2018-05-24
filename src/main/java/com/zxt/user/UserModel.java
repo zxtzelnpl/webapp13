@@ -1,6 +1,8 @@
 package com.zxt.user;
 
-public class UserModel {
+import org.springframework.beans.factory.BeanNameAware;
+
+public class UserModel implements BeanNameAware{
 
     private int userId;
     private String userName;
@@ -9,6 +11,8 @@ public class UserModel {
     private String userHome;
     private String userInfo;
     private String userEmail;
+
+    private String beanName;
 
     public int getUserId() {
         return userId;
@@ -68,11 +72,11 @@ public class UserModel {
 
 
     public void init(){
-        System.out.println("init");
+        System.out.println("init at line 75 of UserModel.java");
     }
 
     public void destroy(){
-        System.out.println("destory");
+        System.out.println("destory at line 79 of UserModel.java");
     }
 
     @Override
@@ -81,5 +85,13 @@ public class UserModel {
                 + ", UserEmail=" + userEmail + "]";
     }
 
+    @Override
+    public void setBeanName(String name) {
+        System.out.println("setBeanName has been called at line 90 of UserModel.java");
+        this.beanName = name;
+    }
 
+    public String getBeanName(){
+        return this.beanName;
+    }
 }

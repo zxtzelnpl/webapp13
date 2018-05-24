@@ -1,0 +1,18 @@
+.ajax-all{
+    min-width:1000px;
+    overflow: hidden;
+}
+
+.ajax-all>div{
+    float:left;
+    width:25%;
+}
+
+.form_all{
+    min-width:1000px;
+    overflow: hidden;
+}
+.form_all>form{
+    float:left;
+    width:50%;
+}
