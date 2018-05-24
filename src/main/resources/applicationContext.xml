@@ -10,7 +10,7 @@
     </bean>-->
 
 
-    <bean id="userController" class="com.zxt.user.UserController" />
+    <bean id="userController" class="com.zxt.user.UserControllerBack" />
 
 
 
