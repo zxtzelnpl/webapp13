@@ -2,7 +2,10 @@ package com.zxt.user;
 
 import org.springframework.beans.factory.BeanNameAware;
 
-public class UserModel implements BeanNameAware{
+import java.io.Serializable;
+import java.math.BigDecimal;
+
+public class UserModel implements BeanNameAware,Serializable {
 
     private int userId;
     private String userName;
@@ -11,6 +14,7 @@ public class UserModel implements BeanNameAware{
     private String userHome;
     private String userInfo;
     private String userEmail;
+    private BigDecimal userMoney;
 
     private String beanName;
 
@@ -42,6 +46,10 @@ public class UserModel implements BeanNameAware{
         return userEmail;
     }
 
+    public BigDecimal getUserMoney() {
+        return userMoney;
+    }
+
     public void setUserId(int userId) {
         this.userId = userId;
     }
@@ -70,6 +78,9 @@ public class UserModel implements BeanNameAware{
         this.userEmail = userEmail;
     }
 
+    public void setUserMoney(BigDecimal userMoney) {
+        this.userMoney = userMoney;
+    }
 
     public void init(){
         System.out.println("init at line 75 of UserModel.java");

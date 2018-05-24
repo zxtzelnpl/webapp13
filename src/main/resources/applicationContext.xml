@@ -3,8 +3,16 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
+    <!--mybatis-spring配置-->
+
+    <!--<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="dataSource" ref="dataSource" />
+    </bean>-->
+
 
     <bean id="userController" class="com.zxt.user.UserController" />
+
+
 
     <bean id="myBeanImp" class="com.zxt.mybean.MyBeanImp">
         <property name="name" value="HanMeimei" />
@@ -21,6 +29,7 @@
         <property name="userSex" value="男" />
         <property name="userHome" value="BeiJin" />
         <property name="userInfo" value="HanMeimei" />
+        <property name="userMoney" value="100" />
         <property name="userEmail" value="zxt_zel_npl@163.com" />
     </bean>
 </beans>
