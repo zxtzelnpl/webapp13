@@ -23,15 +23,4 @@ public class UserService {
         this.userDao.insertOneUser(user);
     }
 
-    public void updateMoney(char action, BigDecimal changeMoney, int userId){
-        this.userDao.updateMoney(action,changeMoney,userId);
-    }
-
-    public void reduceMoney(BigDecimal changeMoney, int userId){
-        this.userDao.reduceMoney(changeMoney,userId);
-    }
-
-    public void addMoney(BigDecimal changeMoney, int userId){
-        this.userDao.addMoney(changeMoney,userId);
-    }
 }
