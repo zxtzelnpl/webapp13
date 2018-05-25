@@ -1,6 +1,7 @@
 package com.zxt.autowiring;
 
 import com.zxt.base.UnitTestBase;
+import com.zxt.user.UserControllerBack;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.BlockJUnit4ClassRunner;
@@ -17,7 +18,11 @@ public class TestAutoWiring extends UnitTestBase {
     }
 
     @Test
-    public void testSay() {
+    public void test() {
+
+        UserControllerBack userControllerBack = super.getBean("userControllerBack");
+        Class UserControllerBackCopy = userControllerBack.getClass();
+
 //        AutoWiringService service = super.getBean("autoWiringService");
 //        service.say(" this is a test");
     }

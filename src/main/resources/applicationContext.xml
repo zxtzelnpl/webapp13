@@ -9,10 +9,7 @@
         <property name="dataSource" ref="dataSource" />
     </bean>-->
 
-
-    <bean id="userController" class="com.zxt.user.UserControllerBack" />
-
-
+    <bean id="userControllerBack" class="com.zxt.user.UserControllerBack" />
 
     <bean id="myBeanImp" class="com.zxt.mybean.MyBeanImp">
         <property name="name" value="HanMeimei" />
