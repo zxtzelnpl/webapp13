@@ -20,7 +20,7 @@ public class UnitTestBase {
     @Before
     public void before(){
         if(StringUtils.isEmpty(springXmlpath)){
-            springXmlpath = "classpath*:spring-*.xml";
+            springXmlpath = BaseConfig.files;
         }
         try{
             context = new ClassPathXmlApplicationContext(springXmlpath.split("[,\\s]+"));
