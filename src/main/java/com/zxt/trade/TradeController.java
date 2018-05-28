@@ -1,5 +1,7 @@
 package com.zxt.trade;
 
+import com.zxt.common.FailJson;
+import com.zxt.common.SuccessJson;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -23,9 +25,19 @@ public class TradeController {
 
 
     @RequestMapping(value = "/add", method = RequestMethod.POST)
-    public @ResponseBody TradeModel trade_add(@RequestBody TradeModel tradeModel){
+    public @ResponseBody Object trade_add(@RequestBody TradeModel tradeModel){
 
-        tradeService.addTrade(tradeModel);
-        return tradeModel;
+        try{
+            tradeService.addTrade(tradeModel);
+        }
+        catch(Exception e)
+        {
+            FailJson failJson = new FailJson();
+            failJson.setReason(e.getMessage());
+            return failJson;
+        }
+        SuccessJson<TradeModel> successJson = new SuccessJson<>();
+        successJson.setData(tradeModel);
+        return successJson;
     }
 }
