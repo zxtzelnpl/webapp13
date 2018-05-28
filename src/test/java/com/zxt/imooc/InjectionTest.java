@@ -17,4 +17,10 @@ public class InjectionTest extends UnitTestBase{
         InjectionService service = super.getBean("injectionServiceImpl");
         service.save("This is autowired");
     }
+
+    @Test
+    public void testMultiBean(){
+        BeanInvoker invoker = super.getBean("beanInvoker");
+        invoker.say();
+    }
 }
