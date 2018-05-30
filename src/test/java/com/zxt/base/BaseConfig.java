@@ -5,6 +5,6 @@ public class BaseConfig {
             ", " + "classpath:applicationContext.xml" +
             ", " + "classpath:spring-mybatis.xml" +
             ", " + "classpath:spring-bean-imooc.xml" +
-            ", " + "classpath:spring-test.xml" +
+            ", " + "classpath:spring-four-for-import-resource.xml" +
             "";
 }

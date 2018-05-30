@@ -1,6 +1,7 @@
 package com.zxt.imooc;
 
 import com.zxt.base.UnitTestBase;
+import com.zxt.imooc.four.Store;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.BlockJUnit4ClassRunner;

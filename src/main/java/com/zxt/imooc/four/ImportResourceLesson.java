@@ -1,4 +1,4 @@
-package com.zxt.imooc;
+package com.zxt.imooc.four;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
@@ -6,8 +6,8 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.ImportResource;
 
 @Configuration
-@ImportResource("classpath:spring-test.xml")
-public class AppConfig {
+@ImportResource("classpath:spring-four-for-import-resource.xml")
+public class ImportResourceLesson {
 
     @Value("${driver}")
     private String driver;
