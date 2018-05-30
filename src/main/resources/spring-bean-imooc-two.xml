@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!--设值注入-->
+    <bean id="injectionServiceImplForSetter" class="com.zxt.imooc.two.InjectionServiceImplForSetter">
+        <property name="injectionDao" ref="injectionDaoImpForSetter"/>
+    </bean>
+
+    <bean id="injectionDaoImpForSetter" class="com.zxt.imooc.two.InjectionDaoImplForSetter" />
+
+    <!--构造器注入-->
+    <bean id="injectionServiceImpForConstructor" class="com.zxt.imooc.two.InjectionServiceImplForConstructor">
+        <constructor-arg name="injectionDao" ref="injectionDaoImpForConstructor"/>
+    </bean>
+
+
+    <bean id="injectionDaoImpForConstructor" class="com.zxt.imooc.two.InjectionDaoImplForSetter" />
+
+</beans>

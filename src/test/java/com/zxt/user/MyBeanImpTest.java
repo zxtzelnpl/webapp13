@@ -14,7 +14,7 @@ public class MyBeanImpTest {
 
     @Test
     public void checkMyBean(){
-        ApplicationContext  context = new ClassPathXmlApplicationContext("applicationContext.xml");
+        ApplicationContext  context = new ClassPathXmlApplicationContext("spring-application-context.xml");
         MyBeanImp myBeanImp = (MyBeanImp)context.getBean("myBeanImp");
         myBeanImp.sayName();
         myBeanImp.showList();
