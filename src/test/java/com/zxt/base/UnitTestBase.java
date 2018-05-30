@@ -53,4 +53,8 @@ public class UnitTestBase {
             return null;
         }
     }
+
+    protected ClassPathXmlApplicationContext getContext(){
+        return context;
+    }
 }
