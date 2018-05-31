@@ -9,11 +9,12 @@ import org.junit.runners.BlockJUnit4ClassRunner;
 public class ImportResourceLessonTest extends UnitTestBase {
 
     public ImportResourceLessonTest(){
+        super();
     }
 
     @Test
     public void testMyDriverManager(){
-        MyDriverManager myDriverManager= super.getBean("myDriveManager");
+        MyDriverManager myDriverManager= super.getBean("myDriverManager");
         System.out.println(myDriverManager.getClass().getName());
     }
 }
