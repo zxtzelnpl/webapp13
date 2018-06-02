@@ -1,6 +1,5 @@
 package com.zxt.imooc;
 
-import com.zxt.base.BaseConfig;
 import com.zxt.base.UnitTestBase;
 import org.junit.Test;
 import org.junit.runner.RunWith;

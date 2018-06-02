@@ -9,7 +9,7 @@ import org.junit.runners.BlockJUnit4ClassRunner;
 public class InjectionTest extends UnitTestBase{
 
     public InjectionTest(){
-        super("classpath:spring-bean-imooc-two.xml");
+        super("classpath:spring-two-for-bean.xml");
     }
 
     @Test
