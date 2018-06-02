@@ -1,6 +1,7 @@
-package com.zxt.imooc;
+package com.zxt.imooc.four;
 
 import com.zxt.base.UnitTestBase;
+import com.zxt.imooc.four.BeanAnnotation;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.BlockJUnit4ClassRunner;
@@ -8,7 +9,7 @@ import org.junit.runners.BlockJUnit4ClassRunner;
 @RunWith(BlockJUnit4ClassRunner.class)
 public class BeanAnnotationTest extends UnitTestBase{
     public BeanAnnotationTest(){
-        super("classpath*:spring-bean-imooc.xml");
+        super("classpath:spring-four-for-bean-imooc.xml");
     }
 
     @Test

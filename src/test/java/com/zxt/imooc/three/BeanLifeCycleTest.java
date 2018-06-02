@@ -8,7 +8,7 @@ import org.junit.runners.BlockJUnit4ClassRunner;
 @RunWith(BlockJUnit4ClassRunner.class)
 public class BeanLifeCycleTest extends UnitTestBase {
     public BeanLifeCycleTest(){
-        super("classpath:spring-bean-imooc.xml");
+        super("classpath:spring-three-bean-imooc.xml");
     }
 
     @Test

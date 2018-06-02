@@ -1,4 +1,4 @@
-package com.zxt.imooc;
+package com.zxt.imooc.four;
 
 public interface BeanInterface {
 }

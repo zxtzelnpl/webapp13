@@ -1,4 +1,4 @@
-package com.zxt.imooc;
+package com.zxt.imooc.four;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
