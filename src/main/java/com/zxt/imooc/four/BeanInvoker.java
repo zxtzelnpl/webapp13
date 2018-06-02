@@ -20,6 +20,7 @@ public class BeanInvoker {
     private BeanInterface beanInterface;
 
     public void say(){
+        /*这边是list*/
         if(null!=list&&0!=list.size()){
             System.out.println("list");
             for(BeanInterface bean:list){
@@ -32,6 +33,7 @@ public class BeanInvoker {
 
         System.out.println();
 
+        /*这边是list*/
         if(null!=map&&0!=map.size()){
             System.out.println("map");
             for(Map.Entry<String,BeanInterface> entry:map.entrySet()){

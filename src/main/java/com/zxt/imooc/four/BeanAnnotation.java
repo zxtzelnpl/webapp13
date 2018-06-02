@@ -1,6 +1,6 @@
 package com.zxt.imooc.four;
 
-import org.springframework.context.annotation.Scope;
+//import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 //@Scope("prototype")
