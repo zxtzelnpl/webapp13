@@ -1,19 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/aop
+       http://www.springframework.org/schema/aop/spring-aop.xsd">
 
-    <bean id="moocAspect" class="com.zxt.imooc.five.MoocAspect" />
+    <bean id="moocAspect" class="com.zxt.imooc.five.MoocAspect" ></bean>
 
-    <bean id="aspectBiz" class="com.zxt.imooc.five.AspectBiz" />
+    <bean id="aspectBiz" class="com.zxt.imooc.five.biz.AspectBiz" ></bean>
 
     <aop:config>
-        <aop:aspect id="moocAspect" ref="moocAspect">
-            <aop:pointcut expression="execution(* com.zxt.imooc.five.AspectBiz.*(..))" id="moocPointcut"/>
+        <aop:aspect id="moocAspectAOP" ref="moocAspect">
+            <aop:pointcut expression="execution(* com.zxt.imooc.five.biz.AspectBiz.*(..))" id="moocPointcut"/>
+            <aop:before method="before" pointcut-ref="moocPointcut"/>
         </aop:aspect>
     </aop:config>
 
-    <bean id="aBean">
-
-    </bean>
 </beans>
