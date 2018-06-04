@@ -9,12 +9,16 @@ import org.junit.runners.BlockJUnit4ClassRunner;
 public class JsrTest extends UnitTestBase{
 
     public JsrTest(){
-
+        super("classpath*:spring-four-for-bean-imooc.xml");
     }
 
     @Test
     public void testSave(){
         JsrService service = getBean("jsrService");
+        JsrDao dao = getBean("jsrDao");
+        System.out.println(service.getClass().getName());
+        System.out.println(dao.getClass().getName());
+        dao.save();
         service.save();
     }
 }

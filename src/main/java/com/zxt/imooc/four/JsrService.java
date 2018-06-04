@@ -12,6 +12,7 @@ public class JsrService {
 //    @Resource
     private JsrDao jsrDao;
 
+    /*这个地方用Resource有点问题*/
     @Resource
     public void setJsrDao(JsrDao jsrDao){
         this.jsrDao = jsrDao;
@@ -28,6 +29,6 @@ public class JsrService {
     }
 
     public void save() {
-        jsrDao.save();
+        this.jsrDao.save();
     }
 }
