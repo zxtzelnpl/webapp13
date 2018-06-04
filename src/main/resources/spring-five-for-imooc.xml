@@ -5,7 +5,7 @@
 
     <bean id="moocAspect" class="com.zxt.imooc.five.MoocAspect" />
 
-    <bean id="aspectBiz" class="com.zxt.imooc.five.AspectBiz"></bean>
+    <bean id="aspectBiz" class="com.zxt.imooc.five.AspectBiz" />
 
     <aop:config>
         <aop:aspect id="moocAspect" ref="moocAspect">
