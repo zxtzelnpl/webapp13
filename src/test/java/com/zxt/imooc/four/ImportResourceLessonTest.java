@@ -9,12 +9,14 @@ import org.junit.runners.BlockJUnit4ClassRunner;
 public class ImportResourceLessonTest extends UnitTestBase {
 
     public ImportResourceLessonTest(){
-        super();
+        super("classpath:spring-four-for-import-resource.xml,spring-four-for-bean-imooc.xml");
+        /*需要扫描包*/
     }
 
     @Test
     public void testMyDriverManager(){
         MyDriverManager myDriverManager= super.getBean("myDriverManager");
         System.out.println(myDriverManager.getClass().getName());
+        myDriverManager.say();
     }
 }
