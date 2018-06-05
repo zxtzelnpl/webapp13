@@ -49,7 +49,9 @@ dependencies {
     // 阿里巴巴的插件返回JSON
     // https://mvnrepository.com/artifact/com.alibaba/fastjson
     compile group: 'com.alibaba', name: 'fastjson', version: '1.2.47'
-
+    // 新的aspectj中好像不包含 weaver包
+    // https://mvnrepository.com/artifact/org.aspectj/aspectjweaver
+    compile group: 'org.aspectj', name: 'aspectjweaver', version: '1.9.1'
 }
 
 

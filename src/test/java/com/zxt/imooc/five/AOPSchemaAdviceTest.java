@@ -14,7 +14,8 @@ public class AOPSchemaAdviceTest extends UnitTestBase{
     }
 
     @Test
-    public void testBiz(){
+    public void testBiz() throws Exception
+    {
         AspectBiz biz = super.getBean("aspectBiz");
         biz.biz();
     }

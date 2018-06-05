@@ -7,14 +7,20 @@
        http://www.springframework.org/schema/aop
        http://www.springframework.org/schema/aop/spring-aop.xsd">
 
+    <!--切面-->
     <bean id="moocAspect" class="com.zxt.imooc.five.MoocAspect" ></bean>
 
+    <!--目标对象-->
     <bean id="aspectBiz" class="com.zxt.imooc.five.biz.AspectBiz" ></bean>
 
+    <!--配置切入点-->
     <aop:config>
         <aop:aspect id="moocAspectAOP" ref="moocAspect">
             <aop:pointcut expression="execution(* com.zxt.imooc.five.biz.AspectBiz.*(..))" id="moocPointcut"/>
             <aop:before method="before" pointcut-ref="moocPointcut"/>
+            <aop:before method="after" pointcut-ref="moocPointcut"/>
+            <aop:after-returning method="afterReturning" pointcut-ref="moocPointcut"/>
+            <aop:after-throwing method="afterThrowing" pointcut-ref="moocPointcut"/>
         </aop:aspect>
     </aop:config>
 
