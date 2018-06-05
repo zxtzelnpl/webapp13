@@ -8,10 +8,10 @@
        http://www.springframework.org/schema/aop/spring-aop.xsd">
 
     <!--切面-->
-    <bean id="moocAspect" class="com.zxt.imooc.five.MoocAspect" ></bean>
+    <bean id="moocAspect" class="com.zxt.imooc.five.MoocAspect" />
 
     <!--目标对象-->
-    <bean id="aspectBiz" class="com.zxt.imooc.five.biz.AspectBiz" ></bean>
+    <bean id="aspectBiz" class="com.zxt.imooc.five.biz.AspectBiz" />
 
     <!--配置切入点-->
     <aop:config>
