@@ -18,9 +18,12 @@
         <aop:aspect id="moocAspectAOP" ref="moocAspect">
             <aop:pointcut expression="execution(* com.zxt.imooc.five.biz.AspectBiz.*(..))" id="moocPointcut"/>
             <aop:before method="before" pointcut-ref="moocPointcut"/>
-            <aop:before method="after" pointcut-ref="moocPointcut"/>
+            <aop:after method="after" pointcut-ref="moocPointcut"/>
             <aop:after-returning method="afterReturning" pointcut-ref="moocPointcut"/>
             <aop:after-throwing method="afterThrowing" pointcut-ref="moocPointcut"/>
+            <aop:around method="around" pointcut-ref="moocPointcut"/>
+
+            <aop:around method="aroundInit" pointcut="execution(* com.zxt.imooc.five.biz.AspectBiz.*(String,int)) and args(bizName,times)"/>
         </aop:aspect>
     </aop:config>
 
