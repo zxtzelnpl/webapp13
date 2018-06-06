@@ -2,6 +2,8 @@ package com.zxt.imooc.five;
 
 import com.zxt.base.UnitTestBase;
 import com.zxt.imooc.five.biz.AspectBiz;
+import com.zxt.imooc.five.fiz.Fiz;
+import com.zxt.imooc.five.fiz.FizImpl;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.BlockJUnit4ClassRunner;
@@ -24,5 +26,11 @@ public class AOPSchemaAdviceTest extends UnitTestBase{
     public void testInit(){
         AspectBiz biz = super.getBean("aspectBiz");
         biz.init("mooc",8);
+    }
+
+    @Test
+    public void testDecalreParent(){
+        Fiz fiz = (Fiz)super.getBean("aspectBiz");
+        fiz.say();
     }
 }

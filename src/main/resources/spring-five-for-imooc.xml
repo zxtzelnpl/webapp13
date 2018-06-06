@@ -24,6 +24,10 @@
             <aop:around method="around" pointcut-ref="moocPointcut"/>
 
             <aop:around method="aroundInit" pointcut="execution(* com.zxt.imooc.five.biz.AspectBiz.*(String,int)) and args(bizName,times)"/>
+
+            <aop:declare-parents types-matching="com.zxt.imooc.five.biz.AspectBiz+"
+                                 implement-interface="com.zxt.imooc.five.fiz.Fiz"
+                                 default-impl="com.zxt.imooc.five.fiz.FizImpl"/>
         </aop:aspect>
     </aop:config>
 
